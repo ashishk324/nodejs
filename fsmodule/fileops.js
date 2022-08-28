@@ -11,4 +11,6 @@ fs.open('checkFile.txt', 'r+', (err, fd) => {
 
 });
 
-fs.appendFile('checkFile.txt',"appending data")
+fs.appendFile('checkFile.txt',"data appended to the file",(err,data)=>{
+    console.log(data);
+});
